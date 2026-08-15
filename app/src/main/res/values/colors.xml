@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Bảng màu Siêu Sắc Nét - Tương phản cực cao -->
+    <color name="primary">#000000</color> 
+    <color name="on_primary">#FFFFFF</color>
+    
+    <color name="background">#FFFFFF</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="on_surface">#000000</color> <!-- Chữ đen đặc cực rõ -->
+    
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    
+    <color name="correct_green">#10A37F</color>
+    <color name="wrong_red">#EF4444</color>
+    
+    <color name="border_color">#E5E5E5</color>
+    <color name="border_light">#F0F0F0</color>
+
+    <!-- Khôi phục mã cũ để tránh lỗi build -->
+    <color name="primary_variant">#000000</color>
+    <color name="secondary">#10A37F</color>
+    <color name="secondary_variant">#0E8A6A</color>
+    <color name="on_secondary">#FFFFFF</color>
+    <color name="primary_dark">#000000</color>
+    <color name="accent">#10A37F</color>
+    <color name="bg_light">#FFFFFF</color>
+    <color name="text_dark">#000000</color>
+    <color name="text_secondary">#4B4B55</color>
+    
+    <!-- Gradient Colors -->
+    <color name="gradient_start">#94EBFF</color>
+    <color name="gradient_center">#C2F3FF</color>
+    <color name="gradient_end">#FFF9D0</color>
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/LoginFragment">
+
+    <fragment
+        android:id="@+id/LoginFragment"
+        android:name="com.example.asm.LoginFragment"
+        android:label="Đăng nhập"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_login_to_register"
+            app:destination="@id/RegisterFragment" />
+        <action
+            android:id="@+id/action_login_to_dashboard"
+            app:destination="@id/DashboardFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/RegisterFragment"
+        android:name="com.example.asm.RegisterFragment"
+        android:label="Đăng ký"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_register_to_login"
+            app:destination="@id/LoginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/DashboardFragment"
+        android:name="com.example.asm.DashboardFragment"
+        android:label="Trang chủ"
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/action_dashboard_to_chat"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_dashboard_to_quiz"
+            app:destination="@id/QuizFragment" />
+        <action
+            android:id="@+id/action_dashboard_to_profile"
+            app:destination="@id/ProfileFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.asm.FirstFragment"
+        android:label="Chat với AI"
+        tools:layout="@layout/fragment_first" />
+
+    <fragment
+        android:id="@+id/QuizFragment"
+        android:name="com.example.asm.QuizFragment"
+        android:label="Luyện tập"
+        tools:layout="@layout/fragment_quiz" />
+
+    <fragment
+        android:id="@+id/ProfileFragment"
+        android:name="com.example.asm.ProfileFragment"
+        android:label="Hồ sơ cá nhân"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profile_to_login"
+            app:destination="@id/LoginFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+</navigation>
